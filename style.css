@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(bgimage.png);
+}
+
+#word{
+    background: linear-gradient(to bottom, white, #B0B3FF);
+      /* 加上這行才會只把背景畫到文字上 */
+    -webkit-background-clip: text; /* ✅ 專門給 Chrome / Safari 用的寫法 */
+    background-clip: text;          /* 🔍 新版 Firefox 可用 */
+
+    /* 讓文字填色透明，才看得到背景漸層 */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+h1{
+    font-size: 128px;
+    
+}
+
+.add-button{
+    font-size: 96px;
+}
+
